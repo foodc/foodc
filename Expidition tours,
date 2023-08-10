@@ -1,0 +1,163 @@
+Certainly! Here's an updated version of the landing page for Embrace Africa Expeditions, including a booking section:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Embrace Africa Expeditions - Unforgettable African Adventures</title>
+  <style>
+    /* Add your custom CSS styling here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    
+    h2 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+    
+    .main-content {
+      padding: 40px;
+      text-align: center;
+    }
+    
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    
+    .cta-button:hover {
+      background-color: #555;
+    }
+    
+    .booking-section {
+      background-color: #f9f9f9;
+      padding: 40px;
+      text-align: center;
+    }
+    
+    .booking-form {
+      display: inline-block;
+      text-align: left;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .submit-button {
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    
+    .submit-button:hover {
+      background-color: #555;
+    }
+    
+    footer {
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Embrace Africa Expeditions</h1>
+    <h2>Unforgettable African Adventures</h2>
+  </header>
+
+  <div class="main-content">
+    <h2>Welcome to Embrace Africa Expeditions!</h2>
+    <p>Embark on a journey of discovery and experience the wonders of Africa with us. We specialize in crafting unforgettable adventures that allow you to embrace the beauty, diversity, and rich cultural heritage of this magnificent continent.</p>
+    <p>Whether you dream of encountering breathtaking wildlife on a safari, exploring ancient historical sites, trekking through lush rainforests, or relaxing on pristine beaches, we have the perfect itinerary tailored to your desires.</p>
+    <p>Our team of experienced guides and travel experts are dedicated to providing you with exceptional service, ensuring that your African adventure surpasses all expectations. Get ready to create lifelong memories and forge a deep connection with Africa.</p>
+    <a class="cta-button" href="#booking">Start Your Journey</a>
+  </div>
+
+  <div id="booking" class="booking-section">
+    <h2>Book Your Adventure</h2>
+    <p>Fill out the form below to book your African adventure with Embrace Africa Expeditions. Our team will get in touch with you to finalize the details and make your dream trip a reality.</p>
+    <form class="booking-form" action="submit_booking.php" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required>
+      </div>
+      <div class="form-group">
+        <label for="date">Travel Date:</label>
+        <input type="text" id="date" name="date" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <div class="form-group">
+        <input class="submit-button" type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Embrace Africa Expeditions. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+```
+
+Please note that the form action attribute `action="submit_booking.php"` needs to be modified to the appropriate server-side script or endpoint that will handle the booking form submission on your website. Additionally, you'll need to create the corresponding `submit_booking.php` file to process the form data and send it to the desired destination.
+
+Feel free to customize the content, styling, and form fields further to suit your needs.
